@@ -5,7 +5,7 @@
 // step 1
 const newElement = document.createElement("h1");
 // step 2
-const nodeText = document.createTextNode("Welcome to my toDo list");
+const nodeText = document.createTextNode("Please add your things to do on our company fridge!");
 // step 3
 //console.log(newElement);
 newElement.appendChild(nodeText);
@@ -28,10 +28,12 @@ const addToList = (e) => {
         // newLi.style.backgroundColor = colorGen();
         const doneBtn = document.createElement('button');
         const delBtn = document.createElement('button');
+        const box = document.createElement('div');
         doneBtn.innerHTML = '✅';
         delBtn.innerHTML = '❌';
-        newLi.appendChild(doneBtn);
-        newLi.appendChild(delBtn);
+        box.appendChild(doneBtn);
+        box.appendChild(delBtn);
+        newLi.appendChild(box);
         ul.appendChild(newLi);
         delBtn.addEventListener('click', () => newLi.remove())
         document.querySelector("#user-data").value = "";
