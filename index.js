@@ -25,7 +25,7 @@ const addToList = (e) => {
         let text = document.createTextNode(userData);
         // step 3
         newLi.appendChild(text);
-        newLi.style.backgroundColor = colorGen();
+        // newLi.style.backgroundColor = colorGen();
         const doneBtn = document.createElement('button');
         const delBtn = document.createElement('button');
         doneBtn.innerHTML = '✅';

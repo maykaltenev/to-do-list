@@ -7,17 +7,20 @@ body {
 }
 ul {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
   top: 134px;
   left: 420px;
-  width: 25vw;
+  width: 55vw;
   height: 70vh;
-  border: 1px red solid;
 }
 ul li {
   display: flex;
-  flex-direction: row;
-  width: 50rem;
-  height: 20rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 10rem;
+  height: 10rem;
   background-image: url(./images/notes.png);
   background-size: contain;
   background-repeat: no-repeat;
