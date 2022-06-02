@@ -1,0 +1,40 @@
+body {
+  background-image: url(./images/fridge.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -99vh;
+  position: relative;
+}
+ul {
+  position: absolute;
+  top: 134px;
+  left: 420px;
+  width: 25vw;
+  height: 70vh;
+  border: 1px red solid;
+}
+ul li {
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  height: 20rem;
+  background-image: url(./images/notes.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+ul li button {
+  justify-self: end;
+}
+
+.done {
+  color: lightgreen;
+  text-decoration: line-through;
+}
+.not-done {
+  color: black;
+  text-decoration: none;
+}
+button {
+  border: 0 none;
+  background-color: transparent;
+}
